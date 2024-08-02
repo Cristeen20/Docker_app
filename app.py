@@ -14,6 +14,7 @@ def index():
 @app.route('/analyze', methods=['POST'])
 def analyze():
     file = request.files['file']
+    
     if not file:
         return "No file uploaded", 400
     
