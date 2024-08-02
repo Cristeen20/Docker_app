@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Data Analysis Results</h1>
+        <h2 class="mt-4">First 5 Rows</h2>
+        <div>{{ head | safe }}</div>
+        <h2 class="mt-4">Basic Statistics</h2>
+        <div>{{ description | safe }}</div>
+        <h2 class="mt-4">Missing Values</h2>
+        <div>{{ missing_values | safe }}</div>
+        <h2 class="mt-4">Data Types</h2>
+        <div>{{ data_types | safe }}</div>
+        <h2 class="mt-4">Unique Values per Column</h2>
+        <div>{{ unique_values | safe }}</div>
+        <a href="/" class="btn btn-primary mt-4">Upload Another File</a>
+    </div>
+</body>
+</html>
